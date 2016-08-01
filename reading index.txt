@@ -3,38 +3,9 @@
 2016-06-22 06:30 PM :: PAG 222(268) "Question 13 ..."
 2016-07-15 09:54 AM :: PAG 241(287) "Understanding Compiler Enhancements ..."
 2016-07-20 07:07 PM :: PAG 256(302) "Creating final methods ..."
+2016-07-29 11:05 PM :: PAG 257(303) "Inheriting Variables ..."
+2016-08-01 04:30 PM :: PAG 259 (305) "Creating Abstract Classes ..."
 
 
-// 1.1 - fail
-class Foo{
-	void test() throws IOException{
-		return "you";
-	}
-}
 
 
-class Doo extends Foo{
-	@Override
-	void test(){
-
-	}
-}
-
-new Foo().test();
-
-// 1.1 - fail
-class Foo{
-	void test() throws IOException{
-		return "you";
-	}
-}
-
-
-class Doo extends Foo{
-	@Override
-	void test(){
-
-	}
-}
-
-new Foo().test();

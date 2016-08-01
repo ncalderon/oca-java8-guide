@@ -1,0 +1,214 @@
+// 1.1 - fail
+class Foo{
+	void test() throws IOException{
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test(){
+
+	}
+}
+
+new Foo().test();
+
+
+// 1.2 - success
+class Foo{
+	void test() throws IOException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test(){
+		super.test();
+	}
+}
+
+new Foo().test();
+
+
+
+// 1.3 - success
+class Foo{
+	void test() throws IOException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test() throws FilenotFoundException{
+		
+	}
+}
+
+new Foo().test();
+
+
+// 1.4 - fail
+class Foo{
+	void test() throws IOException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test() throws FileNotFoundException{
+		super.test();
+	}
+}
+
+new Foo().test();
+
+
+
+
+// 1.5 - success
+class Foo{
+	void test() throws IOException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test(){
+	try{
+		super.test();
+		}catch(FileNotFoundException  e){
+
+		}
+	}
+}
+
+new Foo().test();
+
+
+
+
+// 1.6 - s uccess
+class Foo{
+	void test() throws RuntimeException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test(){
+	}
+}
+
+new Foo().test();
+
+
+
+
+
+// 1.7 - fail
+class Foo{
+	void test() throws RuntimeException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test(){
+		super.test();
+	}
+}
+
+new Foo().test();
+
+
+
+
+// 1.8 - success(conf)
+class Foo{
+	void test() throws RuntimeException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test() throws IndexOutOfBoundException{
+		super.test();
+	}
+}
+
+new Foo().test();
+
+
+
+1.9 -sucecss
+class Foo{
+	void test() throws RuntimeException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test() throws RuntimeException{
+		super.test();
+	}
+}
+
+new Foo().test();
+
+
+
+
+
+1.10 - sucecss
+class Foo{
+	void test() {
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test() throws RuntimeException{
+		super.test();
+	}
+}
+
+new Foo().test();
+
+
+
+
+1.11 - fail
+class Foo{
+	void test()  throws RuntimeException{
+		
+	}
+}
+
+
+class Doo extends Foo{
+	@Override
+	void test() throws RuntimeException{
+		throw new FileNotFoundException();
+	}
+}
+
+new Foo().test();

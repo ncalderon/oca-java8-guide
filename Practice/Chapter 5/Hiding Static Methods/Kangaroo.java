@@ -19,3 +19,11 @@ public class Kangaroo extends Marsupial {
 		joey.getKangarooDescription();
 	}
 }
+
+/* 
+	Output:
+
+	Marsupial walks on two legs: false
+	Kangaroo hops on two legs: true
+
+*/
