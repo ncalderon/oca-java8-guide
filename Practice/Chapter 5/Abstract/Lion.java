@@ -4,10 +4,10 @@ abstract class Animal {
 
 abstract class BigCat extends Animal {
 	public String getName() {
-
-
 		return "BigCat";
 	}
+
+	
 	public abstract void roar();
 }
 public class Lion extends BigCat {
@@ -22,3 +22,12 @@ public class Lion extends BigCat {
 		System.out.println("The Lion lets out a loud ROAR!");
 	}
 }
+
+
+/* 
+	Output:
+
+	The Lion lets out a loud ROAR!
+
+*/
+

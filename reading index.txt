@@ -5,6 +5,8 @@
 2016-07-20 07:07 PM :: PAG 256(302) "Creating final methods ..."
 2016-07-29 11:05 PM :: PAG 257(303) "Inheriting Variables ..."
 2016-08-01 04:30 PM :: PAG 259 (305) "Creating Abstract Classes ..."
+2016-08-02 04:30 PM :: PAG 266 (312 / 435) "Implementing Interfaces ..."
+
 
 
 
