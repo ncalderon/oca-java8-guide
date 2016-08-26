@@ -11,9 +11,19 @@ public class Exception {
 		try {
 			new Worker().start();	
 		} finally {
-
-		}
-
-		
+			System.out.println("Finally reached");
+		}	
+		System.out.println("Line 16 was reached");
 	}
 }
+
+
+/*
+Output:
+
+Started
+Finally reached
+Exception in thread "main" java.lang.RuntimeException: RuntimeException was threw.
+        at Worker.start(Exception.java:4)
+        at Exception.main(Exception.java:12)
+ */

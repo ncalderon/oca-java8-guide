@@ -7,8 +7,7 @@ public class Capybara extends Rodent {
 		Rodent rodent = new Rodent();
 		if (rodent instanceof Capybara){
 			Capybara capybara = (Capybara)rodent;
-		}
-			
+		}			
 		
 
 	}
