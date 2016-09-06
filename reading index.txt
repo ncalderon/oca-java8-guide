@@ -13,9 +13,8 @@
 2016-08-17 04:39 PM :: PAG 308 (354 / 435) "Let’s go back to our young girl example, this time with finally ..."
 
 -- Review index
-2016-08-17 04:39 PM :: PAG 123 (169 / 435) "The answer is 6. Even though all 6 elements of the array are null ..."
-
-
+2016-09-03 04:39 PM :: PAG 123 (169 / 435) "The answer is 6. Even though all 6 elements of the array are null ..."
+2016-09-06 04:29 PM :: PAG 341 (387 / 435) "22. D ..."
 
 
 

@@ -18,13 +18,17 @@
 		if(s == b)
 			out.println("s == b");*/
 import static java.lang.System.out;
+import java.util.Arrays;
 
 public class TestingQuestions {
 
 	
 	
 	public static void main (String ... args) {
-		int [][] a;
+		int [] random = {0,1,2,3,4, 6,8,10};
+		int x = 6;
+		int y = Arrays.binarySearch(random, x);
+		out.println(y);
 
 	}
 }
@@ -114,10 +118,24 @@ public class TestingQuestions {
 		
 		int ids[], types; = int ids[]; int types;
 	- Arrays can be cast like a primitiv type or reference type.
-	- If initialize an array you must specified the size of it. For example:
+	- If initialize an array you must specified the size of it. Although it is legal to leave out the size for later
+	dimensions of a multidimensional array, the first one is required. For example:
 
 	int [][] scores = new int[5][];
+	int [][] scores = new int[5][5];
 
+7. An array is not able to change its size. Both an Array and an ArrayList are ordered and have indexes. 
+	Neither is immutable because their elements can change.
 
+8. An array does not override equals() and so uses object equality. ArrayList does
+	override equals() and defines it as the same elements in the same order.
+
+9. About Arrays class:
+
+	Its method "int binarySearch(int[] a, int key)":
+
+		They array "a" must be sorted prior to making this call. If it is not sorted. The result will be undefined.
+
+		Returns: It will be the index of the search key, if it is contained in the array. Otherwise, (-(insertion point) - 1)
 
 */
