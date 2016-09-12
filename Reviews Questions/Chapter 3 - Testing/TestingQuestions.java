@@ -18,6 +18,7 @@
 		if(s == b)
 			out.println("s == b");*/
 import static java.lang.System.out;
+import java.util.List;
 import java.util.Arrays;
 
 public class TestingQuestions {
@@ -25,10 +26,15 @@ public class TestingQuestions {
 	
 	
 	public static void main (String ... args) {
-		int [] random = {0,1,2,3,4, 6,8,10};
-		int x = 6;
-		int y = Arrays.binarySearch(random, x);
-		out.println(y);
+		//                0,1,2,3,4,5     
+		/*int [] ordered = {1,2,3,6,8,10};
+		int [] unordered = {0,3,2,5,9,7,6,7};
+		int x = 11;
+		int y = Arrays.binarySearch(ordered, x);
+		out.println(y);*/
+
+		List<Integer> list = Arrays.asList(10, 4, -1, 0b1010);
+		out.println(list.get(3));
 
 	}
 }
@@ -137,5 +143,44 @@ public class TestingQuestions {
 		They array "a" must be sorted prior to making this call. If it is not sorted. The result will be undefined.
 
 		Returns: It will be the index of the search key, if it is contained in the array. Otherwise, (-(insertion point) - 1)
+
+10. Collections API
+	
+	Sort:
+
+		This method can sort either a List of numbers and a List of String. 
+		In case of a list of numbers, the numbers are sort in the normal way. But in case of a List of String
+		, the sort would be alphabetically which mean that the numbers will be first in their natural order
+		regardless any contain letters. For example:
+
+		For this: List<String> hex = new Arrays.asList({"30", "8", "3A", "FF"});
+		The output would be = {"30", "3A", "8", "FF"}
+
+11. ArraysList class:
+
+	- ArrayList implements equality to mean the same elements in the same order are equals.
+
+12. LocalDate API
+
+	- You cannot get an instance from LocalDate. You must to use LocalDate.of(YYYY, MM, DD).
+	- Month stars counting with 1 rather than 0(The old way using Calendar.FIELD used to start with 0).
+	- A LocalDate does not have a time element. Therefore, it has no method to add hours and the code does not compile.
+	- Dates are immutable. Therefore plus methods have to assign their return values or will be ignored. 
+	
+13. LocalDateTime API (TODO: For study it)
+
+14. Period
+
+	- Doesn't Allow method chaining. Because it always create a new object in its way. 
+	For example: 
+		Period period = Period.ofDays(5).ofYears(5);
+	Will just stay with: 5 years. Because the method works in this way
+
+		return create(years, 0, 0);:
+
+
+
+	
+
 
 */
