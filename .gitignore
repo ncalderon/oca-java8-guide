@@ -13,3 +13,6 @@ hs_err_pid*
 
 #Others file
 *.tmp
+
+#Folder from IntelliJ
+test-using-ide/.idea/
