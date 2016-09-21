@@ -92,17 +92,17 @@ public class TestingQuestions {
      * @param      beginIndex   the beginning index, inclusive.
      * @param      endIndex     the ending index, exclusive.
 
-3. Java does not allow you to compare different types using ===. For example String and StringBuilder.
+3. Java does not allow you to compare different types using ==. For example String and StringBuilder.
 
-4. A String concatenated with any other type gives a String.
-	For exampleL
+4. A String concatenated with any other type gives a String.d
+	For example
 
 	String a = "a";
 	a += false; // afalse
 	a += 0L; // afalse0
 	a += 0d; // afalse00
 
-5. Strings from the pool are different the string build with String  from the pool.
+5. Strings from the pool are different the string build with String from the pool.
 	One comes directly from the string pool and the other comes from building using String operations.
 
 6. Array in java:

@@ -23,7 +23,7 @@ public class TestingQuestions {
 // Test Cases Facts
 /*
 
-1. Valid Java identifier can contain "$","[A-Za-z]","_" and [0-9](but not begin with them).
+1. Valid Java identifier can contain "$","[A-Za-z]","_" and [0-9]. But not begin with [0-9].
 
 	Also you can have identifier like this "Public" because Java is case sensitive. You can have wathever reserved word you want using case sensitive.
 
@@ -77,7 +77,9 @@ public class TestingQuestions {
 		Water water;
 	}	
 
-5. Local variables don't get assigned default values. The code fails to compile if a local variable is not explicity initialized.
+	But java will use the most specific when you be using it
+
+5. Local variables don't get assigned default values. The code fails to compile if a local variable is not explicity initialized and it's trying to use.
 
 6. Java is completely CASE SENSITIVE that's include PACKAGE NAMES.
 

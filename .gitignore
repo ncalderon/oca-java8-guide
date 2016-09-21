@@ -15,4 +15,4 @@ hs_err_pid*
 *.tmp
 
 #Folder from IntelliJ
-test-using-ide/.idea/	
+test-using-ide/.idea/
