@@ -8,7 +8,19 @@ import java.rmi.server.ExportException;
  */
 public class Parent {
 
-    public Parent() throws Exception {
+    public Parent()  {
+    }
+
+    public void Public (){
+
+    }
+
+    void Default () {
+
+    }
+
+    protected void Protcted () {
+
     }
 
     public void runtimeExceptions () throws ArithmeticException, IllegalArgumentException {
@@ -19,7 +31,7 @@ public class Parent {
 
     }
 
-    public void checkedException () {
+    public void checkedException () throws Exception {
 
     }
 

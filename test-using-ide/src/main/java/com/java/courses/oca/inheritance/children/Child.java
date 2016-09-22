@@ -12,8 +12,24 @@ import java.util.IllegalFormatCodePointException;
  * Created by Nathaniel on 9/20/2016.
  */
 public class Child extends Parent {
+
+    public Child() {
+        super();
+    }
+
+
     @Override
-    public void runtimeExceptions() throws ArithmeticException {
+    public void Public() {
+        super.Public();
+    }
+
+    @Override
+    protected void Protcted() {
+        super.Protcted();
+    }
+
+    @Override
+    public void runtimeExceptions() throws Error {
         super.runtimeExceptions();
     }
 
@@ -23,13 +39,7 @@ public class Child extends Parent {
     }
 
     @Override
-    public void checkedException() {
-        try {
-            System.out.println("");
-            super.checkedException();
-        }catch (Exception ex){
-            System.out.println("");
-        }
-
+    public void checkedException() throws Error, Exception{
+       throw new Error();
     }
 }

@@ -2,6 +2,7 @@ package com.java.courses.oca;
 
 import com.java.courses.oca.def.DefClass;
 import com.java.courses.oca.inheritance.Parent;
+import com.java.courses.oca.inheritance.children.Child;
 import com.java.courses.oca.protect.ProtectClass;
 import sun.reflect.annotation.ExceptionProxy;
 
@@ -15,20 +16,70 @@ import java.util.function.Predicate;
 
 import static java.lang.System.*;
 
+class Reindeer extends App {
+    public Reindeer (int a) {
+        System.out.print("Reindeer");
+    }
+    public boolean hasHorns () {return true;}
+}
+
 public class App
 {
-    static void sum(int a,long b){System.out.println("a method invoked");}
+    public App () {
+        System.out.print("Deer");
+    }
+    public App (int b) {
+        System.out.print("Deer");
+    }
+
+    private boolean hasHorns () {return false;};
+    static void sum(int a,int b){System.out.println("int method invoked");}
+    static void sum(long a,long b){System.out.println("long method invoked");}
 
     public static void main( String[] args )
     {
+        Child c = new Child();
         try {
-
-        }catch (IOException e){
-
+            c.checkedException();
+        } catch (Exception e) {
+            out.println("reached Ex");
+            e.printStackTrace();
+        } catch (Error e) {
+            out.println("reached Error");
+            e.printStackTrace();
         }
 
-        StringBuilder s1 = new StringBuilder("hola");
-        ProtectClass a = new ProtectClass(2);
+        System.out.println("reached after error");
+
+        /*App a = new Reindeer(4);
+        out.print(", "  + a.hasHorns());
+        Reindeer r = (Reindeer) a;
+        out.print(", "  + r.hasHorns());*/
+        /*List<Integer> l = new ArrayList<>(5);
+        int [] i = new int[3];
+        int [] b [] = new int[3][];
+        int d = 5, e [][];
+        e = new int[4][];
+        out.println(d);
+        out.println(e);
+        out.println(Arrays.toString(e));
+        out.println(l);*/
+
+        /*boolean keepGoing = true;
+        int count = 0;
+        int x = 3;
+        while (count++ < 3){
+            int y = (1 + 2 * count) % 3;
+            out.println("Loop: " + count + ", Y: " + y);
+            switch (y){
+                default:
+                    out.println("reached default");
+                case 0: x -= 1; out.println("reached 0"); break;
+                case 1: x+= 5; out.println("reached 5");
+            }
+            out.println(x);
+        }*/
+        //out.println(x);
 
         //howMany(true, {1,2,3});
         /*int a = 5;
