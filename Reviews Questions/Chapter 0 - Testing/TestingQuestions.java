@@ -1,14 +1,14 @@
 public class TestingQuestions {
 	public static void main (String ... args) {
 
-	}
+	}	
 }
 
 
 // Test Cases Facts
 /*
 
-1. Local variables must be initialized before be used.
+1. Local variables must be initialized before use. If you don't will get a compiler Error.
 
 2. Overrided method cannot be more restrictive. For example:
 
@@ -113,5 +113,7 @@ public class TestingQuestions {
    Only checked exceptions are required to be handled (caught) or declared. Runtime exceptions 
    are commonly thrown by both the JVM and programmer code. Checked exceptions are usually thrown by programmer code. 
    Errors are intended to be thrown by the JVM. While a programmer could throw one, this would be a horrible practice.
+
+10. 
 
 */

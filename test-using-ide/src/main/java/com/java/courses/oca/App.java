@@ -17,28 +17,25 @@ import java.util.function.Predicate;
 import static java.lang.System.*;
 
 class Reindeer extends App {
-    public Reindeer (int a) {
-        System.out.print("Reindeer");
-    }
-    public boolean hasHorns () {return true;}
+
 }
 
 public class App
 {
-    public App () {
-        System.out.print("Deer");
-    }
-    public App (int b) {
-        System.out.print("Deer");
-    }
 
-    private boolean hasHorns () {return false;};
-    static void sum(int a,int b){System.out.println("int method invoked");}
-    static void sum(long a,long b){System.out.println("long method invoked");}
+    /*static void sum(int a,int b){System.out.println("int method invoked");}
+    static void sum(long a,long b){System.out.println("long method invoked");}*/
 
     public static void main( String[] args )
     {
-        Child c = new Child();
+
+        int x = 5, j = 0;
+        OUTER: for (int i = 0; i < 3; )
+            INNER: do {
+
+            } while(j <=2);
+
+        /*Child c = new Child();
         try {
             c.checkedException();
         } catch (Exception e) {
@@ -49,7 +46,7 @@ public class App
             e.printStackTrace();
         }
 
-        System.out.println("reached after error");
+        System.out.println("reached after error");*/
 
         /*App a = new Reindeer(4);
         out.print(", "  + a.hasHorns());
