@@ -114,6 +114,32 @@ public class TestingQuestions {
    are commonly thrown by both the JVM and programmer code. Checked exceptions are usually thrown by programmer code. 
    Errors are intended to be thrown by the JVM. While a programmer could throw one, this would be a horrible practice.
 
-10. 
+10. You only can use the "default" keyword at method interfaces. In case one concrete or abstract class implements 
+	two interfaces with the same sign of a "default method", this class will need to implemnts its own method.
+	Regarless it is a abstract class or a concrete class.
+
+11. If you implements two parent-child interfaces on a class, the class only will implements the child.
+	Ex:
+
+	public interface Animal {    public default String getName () { return "parent";} }
+	public interface Mammal extends Animal{     public default String getName () { return "child";} }
+	public abstract class Otter implements Animal, Mammal{}
+	public class ImplOtter extends Otter { public static void main(String ... args) { ImplOtter o = new ImplOtter(); out.println(o.getName());}}
+
+	Output:
+
+	// Child
+
+12. Interface
+
+	- You cannot combine either "abstract" with "default" and "abstract" with "static".
+	- State member always have the modifier "public static final".
+	- Static methods only can be invoked by its own interface.
+
+13. Lambda Expressions
+
+	- You can have one parameter inside parentheses without specify the type.
+	- You cannot use autoboxing for primitive type.
+	- The parentheses are only optional when there is one parameter and it doesn’t have a type declared. 
 
 */

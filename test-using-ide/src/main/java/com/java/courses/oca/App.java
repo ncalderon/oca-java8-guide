@@ -1,5 +1,6 @@
 package com.java.courses.oca;
 
+import com.java.courses.oca.abstracts.ImplOtter;
 import com.java.courses.oca.def.DefClass;
 import com.java.courses.oca.inheritance.Parent;
 import com.java.courses.oca.inheritance.children.Child;
@@ -16,24 +17,28 @@ import java.util.function.Predicate;
 
 import static java.lang.System.*;
 
-class Reindeer extends App {
-
-}
 
 public class App
 {
 
     /*static void sum(int a,int b){System.out.println("int method invoked");}
     static void sum(long a,long b){System.out.println("long method invoked");}*/
+    public static boolean test (Predicate<Integer> p) {
+        return p.test(5);
+    }
 
     public static void main( String[] args )
     {
 
-        int x = 5, j = 0;
+        System.out.println(test(i -> i == 5));
+        //System.out.println(test(() -> i == 5));
+        //System.out.println(test((Integer i, Integer b) -> i == 5));
+
+        /*int x = 5, j = 0;
         OUTER: for (int i = 0; i < 3; )
             INNER: do {
 
-            } while(j <=2);
+            } while(j <=2);*/
 
         /*Child c = new Child();
         try {
