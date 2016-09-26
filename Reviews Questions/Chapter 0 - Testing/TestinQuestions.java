@@ -1,14 +1,14 @@
 public class TestingQuestions {
 	public static void main (String ... args) {
 
-	}	
+	}
 }
 
 
 // Test Cases Facts
 /*
 
-1. Local variables must be initialized before use. If you don't will get a compiler Error.
+1. Local variables must be initialized before be used.
 
 2. Overrided method cannot be more restrictive. For example:
 
@@ -113,36 +113,5 @@ public class TestingQuestions {
    Only checked exceptions are required to be handled (caught) or declared. Runtime exceptions 
    are commonly thrown by both the JVM and programmer code. Checked exceptions are usually thrown by programmer code. 
    Errors are intended to be thrown by the JVM. While a programmer could throw one, this would be a horrible practice.
-
-10. You only can use the "default" keyword at method interfaces. In case one concrete or abstract class implements 
-	two interfaces with the same sign of a "default method", this class will need to implemnts its own method.
-	Regarless it is a abstract class or a concrete class.
-
-11. If you implements two parent-child interfaces on a class, the class only will implements the child.
-	Ex:
-
-	public interface Animal {    public default String getName () { return "parent";} }
-	public interface Mammal extends Animal{     public default String getName () { return "child";} }
-	public abstract class Otter implements Animal, Mammal{}
-	public class ImplOtter extends Otter { public static void main(String ... args) { ImplOtter o = new ImplOtter(); out.println(o.getName());}}
-
-	Output:
-
-	// Child
-
-12. Interface
-
-	- You cannot have "package private", "private", "protected" modifier.
-	- You cannot combine either "abstract" with "default" and "abstract" with "static".
-	- Since a class cannot inherit two interfaces that both define default methods with the same signature
-	 , unless the class implementing the interfaces overrides it with an abstract or concrete method.
-	- State member always have the modifier "public static final".
-	- Static methods only can be invoked by its own interface.
-
-13. Lambda Expressions
-
-	- You can have one parameter inside parentheses without specify the type.
-	- You cannot use autoboxing for primitive type.
-	- The parentheses are only optional when there is one parameter and it doesn’t have a type declared. 
 
 */

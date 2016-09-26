@@ -8,13 +8,16 @@ import java.rmi.server.ExportException;
  */
 public class Parent {
 
-    public Parent()  {
-    }
+    public int publicInt = 1;
+    public static int staticInt = 5;
+
+    public static int b;
 
     public void Public (){
 
     }
 
+    private static void privstatic () {}
     void Default () {
 
     }
@@ -33,6 +36,24 @@ public class Parent {
 
     public void checkedException () throws Exception {
 
+    }
+
+    public static void Static () {
+        System.out.println(staticInt);
+    }
+
+    public Parent covariant () {
+        return this;
+    }
+
+    public void printInsanceVariables () {
+        System.out.println("From Parent");
+        System.out.println(publicInt);
+        privateMethod();
+    }
+
+    private void privateMethod () {
+        System.out.println("From parent private method");
     }
 
 

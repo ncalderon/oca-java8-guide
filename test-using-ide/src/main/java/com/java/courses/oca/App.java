@@ -1,36 +1,46 @@
 package com.java.courses.oca;
 
+
+
+import java.lang.*;
+import java.lang.*;
 import com.java.courses.oca.abstracts.ImplOtter;
 import com.java.courses.oca.def.DefClass;
 import com.java.courses.oca.inheritance.Parent;
 import com.java.courses.oca.inheritance.children.Child;
+import com.java.courses.oca.interfaces.Concrete;
+import com.java.courses.oca.interfaces.first;
 import com.java.courses.oca.protect.ProtectClass;
 import sun.reflect.annotation.ExceptionProxy;
+import sun.rmi.runtime.RuntimeUtil;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.rmi.server.ExportException;
-import java.time.LocalDate;
-import java.time.Month;
-import java.time.Period;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.function.Predicate;
 
 import static java.lang.System.*;
 
 
+interface CanClimb { public int getTotal(); }
+interface HasClaws {  public double getFullTotal(); }
 public class App
 {
 
-    /*static void sum(int a,int b){System.out.println("int method invoked");}
-    static void sum(long a,long b){System.out.println("long method invoked");}*/
-    public static boolean test (Predicate<Integer> p) {
-        return p.test(5);
-    }
-
-    public static void main( String[] args )
+    public static void main(String[] args )
     {
 
-        System.out.println(test(i -> i == 5));
+        
+
+        /*print(10.2f);
+        out.println(new Concrete().getInt());
+        out.println(Concrete.getInt());
+        out.println(first.getInt());*/
+        /*new Child().printInsanceVariables();
+        new Parent().printInsanceVariables();*/
         //System.out.println(test(() -> i == 5));
         //System.out.println(test((Integer i, Integer b) -> i == 5));
 
@@ -125,4 +135,5 @@ public class App
 
 
 }
+
 

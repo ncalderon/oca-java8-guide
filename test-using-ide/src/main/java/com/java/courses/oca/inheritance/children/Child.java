@@ -13,9 +13,10 @@ import java.util.IllegalFormatCodePointException;
  */
 public class Child extends Parent {
 
-    public Child() {
-        super();
-    }
+    public int publicInt = 5;
+    public static int staticInt = 10;
+
+
 
 
     @Override
@@ -41,5 +42,27 @@ public class Child extends Parent {
     @Override
     public void checkedException() throws Error, Exception{
        throw new Error();
+    }
+
+    @Override
+    public Child covariant() {
+        return this;
+    }
+
+    public static void Static () {
+        System.out.println(staticInt);
+    }
+
+    @Override
+    public void printInsanceVariables() {
+        System.out.println("From child");
+        System.out.println(publicInt);
+        privateMethod();
+        super.printInsanceVariables();
+
+    }
+
+    private void privateMethod () {
+        System.out.println("From child private method");
     }
 }

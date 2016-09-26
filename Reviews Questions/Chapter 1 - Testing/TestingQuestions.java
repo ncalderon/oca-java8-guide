@@ -27,11 +27,21 @@ public class TestingQuestions {
 
 	Also you can have identifier like this "Public" because Java is case sensitive. You can have wathever reserved word you want using case sensitive.
 
-2. You cannot declare a double like this:
+2. Numeric Promotion:
 
-	double d = 0;
+	Numeric Promotion Rules
+	1. If two values have different data types, Java will automatically promote one of the values to the larger of the two data types.
+	2. If one of the values is integral and the other is floating-point, Java will automatically
+	promote the integral value to the floating-point value’s data type.
+	3. Smaller data types, namely byte, short, and char, are first promoted to int any time
+	they’re used with a Java binary arithmetic operator, even if neither of the operands is
+	int.
+	4. After all promotion has occurred and the operands have the same data type, the resulting value will have the same data type as its promoted operands.
 
-	Because literals number are considered like a integer always so you need to convert it to valid Doble. Like this:
+	Numeric Literals:
+
+	- all floating point are a doble	
+	- all integer number are int.
 
 	double d = 0D; or double d = 0d; 
 	double d = 0.0;
@@ -79,7 +89,8 @@ public class TestingQuestions {
 
 	But java will use the most specific when you be using it
 
-5. Local variables don't get assigned default values. The code fails to compile if a local variable is not explicity initialized and it's trying to use.
+5. Local variables don't get assigned default values. 
+	The code fails to compile if a local variable is not explicity initialized and it's trying to use.
 
 6. Java is completely CASE SENSITIVE that's include PACKAGE NAMES.
 
@@ -87,6 +98,7 @@ public class TestingQuestions {
 
 	0b ---> Binary Prefix
 	0x ---> Hexadecimal Prefix
+	0 for octal
 
 8. Calling System.gc() has no effect on eligibility for garbage collection.
 
@@ -96,7 +108,9 @@ public class TestingQuestions {
 
 9. Java doesn't has operator overloading and pointers. 
 
-
+10. All of the arithmetic operators may be applied to any Java primitives, except boolean
+	and String. Furthermore, only the addition operators + and += may be applied to String
+	values, which results in String concatenation.
 
 
 

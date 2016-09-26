@@ -31,7 +31,7 @@ order.
 
 4. You cannot create Cyrcle inheritance, two classes inherit each other.
 
-5. You cannot asign "void" like a type to any variable or member state of a class.
+5. You cannot asign "void" like a type to any variable or field state of a class.
 
 6. JavaBeans naming conventios for accessors and mutators
 
@@ -93,5 +93,5 @@ order.
 	TODO: Review topics.
 
 	3. Remember the one method in the interface called test()? It takes any one reference type parameter and returns a boolean.
-	
+
 */
