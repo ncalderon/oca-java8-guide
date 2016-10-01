@@ -1,6 +1,6 @@
 # Practice and Important facts from OCA 8 Book - selikoff
 
-This repository was created by the purpose of track my learning through the book. 
+This repository was created by the purpose of track my learning throughout the book. 
 
 ### About folders
 
